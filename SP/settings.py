@@ -53,6 +53,12 @@ MONGODB_HOST = '127.0.0.1'
 MONGODB_PORT = 27017
 MONGODB_DB = 'spider_db'
 
+# mysql
+MYSQL_HOST = "127.0.0.1"
+MYSQL_DBNAME = "spiders"
+MYSQL_USER = "root"
+MYSQL_PASSWORD = "root"
+
 # kafka
 KAFKA_SERVERS = ['172.16.122.17:9092', ]
 

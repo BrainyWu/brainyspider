@@ -17,10 +17,6 @@ from SP.utils.make_jobs import ScheduledRequest
 class SPRedisSpider(RedisSpider):
     start_urls = []
 
-    def handles_start_urls(self, spider):
-        for start_url in self.start_urls:
-            self.server.lpush(self.redis_key, start_url)
-
     def start_requests(self):
         """Returns a batch of start requests from redis."""
         for start_url in self.start_urls:

@@ -6,6 +6,13 @@
 # https://doc.scrapy.org/en/latest/topics/items.html
 
 import scrapy
+from scrapy.loader import ItemLoader
+from scrapy.loader.processors import TakeFirst
+
+
+class FirstItemLoader(ItemLoader):
+    # 自定义itemloader
+    default_output_processor = TakeFirst()
 
 
 class SPItem(scrapy.Item):

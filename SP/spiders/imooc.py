@@ -12,7 +12,7 @@ from SP.utils.make_log import log
 from SP.utils.tool import get_file_type
 
 
-class myimooc_Spider(SPRedisSpider):
+class ImoocSpider(SPRedisSpider):
     name = 'imooc'
 
     redis_key = f'{name}:start_urls'
