@@ -26,6 +26,10 @@ NEWSPIDER_MODULE = 'SP.spiders'
 # redis
 REDIS_HOST = '127.0.0.1'
 REDIS_PORT = 6379
+REDIS_DATABASE = 3
+# REDIS_PARAMS = {
+#     'password': '123456'
+# }
 
 # splash服务url
 SPLASH_URL = 'http://127.0.0.1:8050'

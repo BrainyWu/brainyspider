@@ -23,7 +23,8 @@ class ProxySpider(SPRedisSpider):
         'CONCURRENT_REQUESTS': 10,  # 控制并发数，默认16
         'DOWNLOAD_DELAY': 1,  # 控制下载延迟，默认0
         'ITEM_PIPELINES': {
-            'SP.pipelines.ipproxy_pipelines.MysqlTwistedPipline': 1,
+            # 'SP.pipelines.ipproxy_pipelines.MysqlTwistedPipline': 1,
+            'SP.pipelines.ipproxy_pipelines.RedisPipeline': 2,
         },
         'DOWNLOADER_MIDDLEWARES': {
             'SP.middlewares.UserAgentMiddleWare.UserAgentMiddleWare': 10,
